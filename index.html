@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-Scroller | Mario Style Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-overlay">
+            <div id="hud">
+                <div class="stat">SCORE: <span id="score">0</span></div>
+                <div class="stat">LIVES: <span id="lives">3</span></div>
+            </div>
+            <div id="start-screen" class="overlay">
+                <h1>CYBER SCROLLER</h1>
+                <p>Use ARROW KEYS to Move & Jump</p>
+                <button id="start-btn">START GAME</button>
+            </div>
+            <div id="game-over" class="overlay hidden">
+                <h1>GAME OVER</h1>
+                <p>Better luck next time, Runner.</p>
+                <button id="restart-btn">RETRY</button>
+            </div>
+            <div id="win-screen" class="overlay hidden">
+                <h1>MISSION COMPLETE</h1>
+                <p>System Breach Successful.</p>
+                <div class="stat">FINAL SCORE: <span id="final-score">0</span></div>
+                <button id="play-again-btn">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
